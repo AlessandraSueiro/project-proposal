@@ -3,7 +3,6 @@
     list-style-type: none;
     margin: 0;
     padding: .2rem;
-    background-color: var(--secondary-color);
     color: var(--fourth-color);
     font-size: 20px;
     display: flex;
@@ -18,7 +17,7 @@ padding: 0 20px;
 padding: .5rem;
 border-radius: 1rem;}
 .navigationbar a:hover{
-background-color: white;
+color: black;
 border-radius: 2rem;
 transition: background-color ease .5s;}
 .navbar{display: flex;
@@ -26,21 +25,67 @@ align-items: center;
 justify-content: center;}
 .nav-link{color: var(--color-primary);
 font-size: 22px;
-font-weight: bold;
 -webkit-text-stroke: 1px var(--fourth-color);}
 .nav-link:hover{transition: 0.3s ease;
-background-color: white;
+color: black;
+text-decoration: underline;
 border-radius: 1rem;}
 :root {
   --primary-color: #19381f;
   --secondary-color: #f1ea0f;
   --third-color:#53a548;
-  --fourth-color:#25337a;
+  --fourth-color:#840051;
 }
 .logo img{border-radius: 10rem;}
 /*HomePage*/
-.homepage{background-color: white}
-.homeh1 {text-align: center;}
-.footer1{background-color: var(--secondary-color);
-padding: 30px;}
+.homepage{background-color: #fbe8f6}
+.homeh1 {text-align: center;
+font-size: 50px;
+margin: 4rem;
+padding: 1rem;}
+.intro{padding: 3rem;
+margin: 3rem;
+text-align: center;
+font-size: 20px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;}
+.box{padding: 2rem;
+margin: 1rem;
+letter-spacing: .5px;
+font-size: 18px;
+line-height: 1.4;
+font-family: Verdana, Geneva, Tahoma, sans-serif;}
+h2{color: #840051;
+font-size: 30px;
+margin: 2rem;}
 
+/*Submit Your Work*/
+.box2{background-color: white;
+border-radius: 2rem;
+border: #840051 dashed 3px;
+padding: 1rem;
+margin: 1rem;}
+.box2 p{font-size: 20px;}
+.box2 h3{font-size: 22px;}
+
+/*Scroll-Bar*/
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff6fcf; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff6fcf; 
+}
